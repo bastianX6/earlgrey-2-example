@@ -11,7 +11,7 @@ import Foundation
 protocol ItunesDataSourceProtocol {
     func getSearchResults(for text: String,
                           completion: @escaping (Result<ItunesSearchResponse, Error>) -> Void)
-    func getDetail(forId id: Int64,
+    func getDetail(id: Int64,
                    completion: @escaping (Result<ItunesSearchResponse, Error>) -> Void)
 }
 
