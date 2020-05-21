@@ -23,6 +23,9 @@
 		0396313D247723A60081E2A4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396313C247723A60081E2A4 /* Endpoints.swift */; };
 		0396313F247725240081E2A4 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396313E247725240081E2A4 /* NetworkClientError.swift */; };
 		03963141247725E00081E2A4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963140247725E00081E2A4 /* NetworkClient.swift */; };
+		0396314524772DCF0081E2A4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396314424772DCF0081E2A4 /* SearchView.swift */; };
+		0396314724772F1A0081E2A4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396314624772F1A0081E2A4 /* SearchBar.swift */; };
+		03963149247731350081E2A4 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963148247731350081E2A4 /* SearchViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		0396313C247723A60081E2A4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		0396313E247725240081E2A4 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
 		03963140247725E00081E2A4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		0396314424772DCF0081E2A4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0396314624772F1A0081E2A4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		03963148247731350081E2A4 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 				03963129247720EF0081E2A4 /* Core */,
 				03963104247720CA0081E2A4 /* LaunchScreen.storyboard */,
 				03963101247720CA0081E2A4 /* Preview Content */,
+				0396314324772BE60081E2A4 /* Search */,
 			);
 			path = ItunesSimpleSearch;
 			sourceTree = "<group>";
@@ -190,6 +197,16 @@
 				0396313A2477238C0081E2A4 /* NetworkClientProtocol.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		0396314324772BE60081E2A4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0396314424772DCF0081E2A4 /* SearchView.swift */,
+				0396314624772F1A0081E2A4 /* SearchBar.swift */,
+				03963148247731350081E2A4 /* SearchViewCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,12 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0396314724772F1A0081E2A4 /* SearchBar.swift in Sources */,
 				0396312F247721800081E2A4 /* ItunesSearchResponse.swift in Sources */,
 				0396313B2477238C0081E2A4 /* NetworkClientProtocol.swift in Sources */,
 				039630FA247720C80081E2A4 /* AppDelegate.swift in Sources */,
 				03963141247725E00081E2A4 /* NetworkClient.swift in Sources */,
+				0396314524772DCF0081E2A4 /* SearchView.swift in Sources */,
 				03963131247721CA0081E2A4 /* ItunesDataSourceProtocol.swift in Sources */,
 				039630FC247720C80081E2A4 /* SceneDelegate.swift in Sources */,
+				03963149247731350081E2A4 /* SearchViewCell.swift in Sources */,
 				039631332477227F0081E2A4 /* ItunesDataSoruce.swift in Sources */,
 				0396313F247725240081E2A4 /* NetworkClientError.swift in Sources */,
 				0396312D247721610081E2A4 /* ItunesEntity.swift in Sources */,
