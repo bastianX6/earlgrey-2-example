@@ -10,7 +10,7 @@ import Foundation
 
 protocol LookupRepositoryProtocol {
     func getDetail(id: Int64,
-                   completion: @escaping (Result<ItunesEntity, Error>) -> Void)
+                   completion: @escaping (Result<LookupDetailModel, Error>) -> Void)
     func cancelPreviousSearch()
 }
 

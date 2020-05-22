@@ -14,24 +14,31 @@ struct SearchCellModel: Identifiable {
     let songName: String
     let artistName: String
     let coverUrlString: String
+    let trackId: Int64
     var coverUrl: URL? {
         return URL(string: self.coverUrlString)
     }
 
-    init(songName: String, artistName: String, coverUrlString: String) {
+    init(songName: String,
+         artistName: String,
+         coverUrlString: String,
+         trackId: Int64) {
         self.songName = songName
         self.artistName = artistName
         self.coverUrlString = coverUrlString
+        self.trackId = trackId
     }
 
     init?(entity: ItunesEntity) {
         guard let songName = entity.trackName,
             let artistName = entity.artistName,
-            let coverUrl = entity.artworkUrl60 else {
+            let coverUrl = entity.artworkUrl60,
+            let trackId = entity.trackId else {
             return nil
         }
         self.songName = songName
         self.artistName = artistName
         self.coverUrlString = coverUrl
+        self.trackId = trackId
     }
 }

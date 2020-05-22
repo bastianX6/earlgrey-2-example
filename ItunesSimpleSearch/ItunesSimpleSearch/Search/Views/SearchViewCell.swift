@@ -38,15 +38,16 @@ struct SearchViewCell: View {
 struct SearchViewCell_Previews: PreviewProvider {
     static let model = SearchCellModel(songName: "a song",
                                        artistName: "An artist",
-                                       coverUrlString: "")
+                                       coverUrlString: "",
+                                       trackId: 0)
 
     static let models: [SearchCellModel] = [
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "")
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "", trackId: 0),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "", trackId: 0),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "", trackId: 0),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "", trackId: 0),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "", trackId: 0),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "", trackId: 0)
     ]
 
     static var previews: some View {

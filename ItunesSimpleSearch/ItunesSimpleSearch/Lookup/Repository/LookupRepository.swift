@@ -11,17 +11,18 @@ import Foundation
 class LookupRepository: LookupRepositoryProtocol {
     private let dataSource: ItunesDataSourceProtocol
 
-    init(dataSource: ItunesDataSourceProtocol) {
+    init(dataSource: ItunesDataSourceProtocol = ItunesDataSoruce()) {
         self.dataSource = dataSource
     }
 
     func getDetail(id: Int64,
-                   completion: @escaping (Result<ItunesEntity, Error>) -> Void) {
+                   completion: @escaping (Result<LookupDetailModel, Error>) -> Void) {
         self.dataSource.getDetail(id: id) { result in
             switch result {
             case let .success(response):
-                if let entity = response.results?.first {
-                    completion(.success(entity))
+                if let entity = response.results?.first,
+                    let model = LookupDetailModel(entity: entity) {
+                    completion(.success(model))
                 } else {
                     completion(.failure(LookupRepositoryError.noElements))
                 }

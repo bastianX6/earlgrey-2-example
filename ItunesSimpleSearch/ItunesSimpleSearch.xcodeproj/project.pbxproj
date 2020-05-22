@@ -34,6 +34,9 @@
 		03B947A12477566900D8C26C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03B947A02477566900D8C26C /* SDWebImageSwiftUI */; };
 		03B947A524775C9B00D8C26C /* LookupRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947A424775C9B00D8C26C /* LookupRepositoryProtocol.swift */; };
 		03B947A724775F4900D8C26C /* LookupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947A624775F4900D8C26C /* LookupRepository.swift */; };
+		03B947AA2477604F00D8C26C /* LookupDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947A92477604F00D8C26C /* LookupDetailModel.swift */; };
+		03B947AC247761F400D8C26C /* LookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947AB247761F400D8C26C /* LookupViewModel.swift */; };
+		03B947AF247764AF00D8C26C /* LookupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947AE247764AF00D8C26C /* LookupDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		03B9479D2477522900D8C26C /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
 		03B947A424775C9B00D8C26C /* LookupRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupRepositoryProtocol.swift; sourceTree = "<group>"; };
 		03B947A624775F4900D8C26C /* LookupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupRepository.swift; sourceTree = "<group>"; };
+		03B947A92477604F00D8C26C /* LookupDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupDetailModel.swift; sourceTree = "<group>"; };
+		03B947AB247761F400D8C26C /* LookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupViewModel.swift; sourceTree = "<group>"; };
+		03B947AE247764AF00D8C26C /* LookupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				03B947A324775C8600D8C26C /* Repository */,
+				03B947A82477603A00D8C26C /* ViewModel */,
+				03B947AD247763FA00D8C26C /* Views */,
 			);
 			path = Lookup;
 			sourceTree = "<group>";
@@ -278,6 +286,23 @@
 				03B947A624775F4900D8C26C /* LookupRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		03B947A82477603A00D8C26C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03B947A92477604F00D8C26C /* LookupDetailModel.swift */,
+				03B947AB247761F400D8C26C /* LookupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03B947AD247763FA00D8C26C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03B947AE247764AF00D8C26C /* LookupDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396314724772F1A0081E2A4 /* SearchBar.swift in Sources */,
+				03B947AF247764AF00D8C26C /* LookupDetailView.swift in Sources */,
 				03B947A524775C9B00D8C26C /* LookupRepositoryProtocol.swift in Sources */,
 				0396312F247721800081E2A4 /* ItunesSearchResponse.swift in Sources */,
 				0396313B2477238C0081E2A4 /* NetworkClientProtocol.swift in Sources */,
@@ -435,7 +461,9 @@
 				039631332477227F0081E2A4 /* ItunesDataSoruce.swift in Sources */,
 				0396313F247725240081E2A4 /* NetworkClientError.swift in Sources */,
 				0396312D247721610081E2A4 /* ItunesEntity.swift in Sources */,
+				03B947AA2477604F00D8C26C /* LookupDetailModel.swift in Sources */,
 				03B9479924774B9000D8C26C /* SearchRepositoryProtocol.swift in Sources */,
+				03B947AC247761F400D8C26C /* LookupViewModel.swift in Sources */,
 				0396313D247723A60081E2A4 /* Endpoints.swift in Sources */,
 				039630FE247720C80081E2A4 /* ContentView.swift in Sources */,
 			);
