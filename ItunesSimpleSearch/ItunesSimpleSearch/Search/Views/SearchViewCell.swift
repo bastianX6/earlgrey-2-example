@@ -32,13 +32,6 @@ struct SearchViewCell: View {
     }
 }
 
-struct SearchCellModel: Identifiable {
-    let songName: String
-    let artistName: String
-    let coverUrl: String
-    let id: UUID = UUID()
-}
-
 struct SearchViewCell_Previews: PreviewProvider {
     static let model = SearchCellModel(songName: "a song",
                                        artistName: "An artist",

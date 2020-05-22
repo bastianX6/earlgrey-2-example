@@ -27,6 +27,10 @@
 		0396314724772F1A0081E2A4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396314624772F1A0081E2A4 /* SearchBar.swift */; };
 		03963149247731350081E2A4 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963148247731350081E2A4 /* SearchViewCell.swift */; };
 		0396314B247736140081E2A4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396314A247736140081E2A4 /* SearchViewModel.swift */; };
+		03B9479724774B6D00D8C26C /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479624774B6D00D8C26C /* SearchRepository.swift */; };
+		03B9479924774B9000D8C26C /* SearchRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479824774B9000D8C26C /* SearchRepositoryProtocol.swift */; };
+		03B9479B24774EBF00D8C26C /* SearchCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479A24774EBF00D8C26C /* SearchCellModel.swift */; };
+		03B9479E2477522900D8C26C /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479D2477522900D8C26C /* View+AnyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		0396314624772F1A0081E2A4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		03963148247731350081E2A4 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 		0396314A247736140081E2A4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		03B9479624774B6D00D8C26C /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		03B9479824774B9000D8C26C /* SearchRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryProtocol.swift; sourceTree = "<group>"; };
+		03B9479A24774EBF00D8C26C /* SearchCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellModel.swift; sourceTree = "<group>"; };
+		03B9479D2477522900D8C26C /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +173,10 @@
 		03963129247720EF0081E2A4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				039631392477236D0081E2A4 /* Networking */,
-				0396312B2477214D0081E2A4 /* Entities */,
 				0396312A2477211B0081E2A4 /* DataSource */,
+				0396312B2477214D0081E2A4 /* Entities */,
+				039631392477236D0081E2A4 /* Networking */,
+				03B9479C2477521500D8C26C /* Utils */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -204,6 +213,7 @@
 		0396314324772BE60081E2A4 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				03B9479524774B5300D8C26C /* Repository */,
 				0396314D24774A840081E2A4 /* ViewModel */,
 				0396314C24774A780081E2A4 /* Views */,
 			);
@@ -224,8 +234,26 @@
 			isa = PBXGroup;
 			children = (
 				0396314A247736140081E2A4 /* SearchViewModel.swift */,
+				03B9479A24774EBF00D8C26C /* SearchCellModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03B9479524774B5300D8C26C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				03B9479624774B6D00D8C26C /* SearchRepository.swift */,
+				03B9479824774B9000D8C26C /* SearchRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		03B9479C2477521500D8C26C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				03B9479D2477522900D8C26C /* View+AnyView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,12 +394,16 @@
 				03963141247725E00081E2A4 /* NetworkClient.swift in Sources */,
 				0396314524772DCF0081E2A4 /* SearchView.swift in Sources */,
 				0396314B247736140081E2A4 /* SearchViewModel.swift in Sources */,
+				03B9479724774B6D00D8C26C /* SearchRepository.swift in Sources */,
 				03963131247721CA0081E2A4 /* ItunesDataSourceProtocol.swift in Sources */,
+				03B9479B24774EBF00D8C26C /* SearchCellModel.swift in Sources */,
+				03B9479E2477522900D8C26C /* View+AnyView.swift in Sources */,
 				039630FC247720C80081E2A4 /* SceneDelegate.swift in Sources */,
 				03963149247731350081E2A4 /* SearchViewCell.swift in Sources */,
 				039631332477227F0081E2A4 /* ItunesDataSoruce.swift in Sources */,
 				0396313F247725240081E2A4 /* NetworkClientError.swift in Sources */,
 				0396312D247721610081E2A4 /* ItunesEntity.swift in Sources */,
+				03B9479924774B9000D8C26C /* SearchRepositoryProtocol.swift in Sources */,
 				0396313D247723A60081E2A4 /* Endpoints.swift in Sources */,
 				039630FE247720C80081E2A4 /* ContentView.swift in Sources */,
 			);

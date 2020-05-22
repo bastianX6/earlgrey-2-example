@@ -13,6 +13,7 @@ protocol ItunesDataSourceProtocol {
                           completion: @escaping (Result<ItunesSearchResponse, Error>) -> Void)
     func getDetail(id: Int64,
                    completion: @escaping (Result<ItunesSearchResponse, Error>) -> Void)
+    func cancelRequest()
 }
 
 enum ItunesDataSourceError: Error {

@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+// Code from: https://medium.com/@axelhodler/creating-a-search-bar-for-swiftui-e216fe8c8c7f
 struct SearchBar: UIViewRepresentable {
     @Binding var text: String
     var placeholder: String
@@ -18,10 +19,6 @@ struct SearchBar: UIViewRepresentable {
 
         init(text: Binding<String>) {
             self._text = text
-        }
-
-        func searchBar(_: UISearchBar, textDidChange searchText: String) {
-            self.text = searchText
         }
 
         func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

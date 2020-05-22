@@ -68,4 +68,8 @@ class ItunesDataSoruce: ItunesDataSourceProtocol {
             }
         }
     }
+
+    func cancelRequest() {
+        self.client.cancelRequest()
+    }
 }
