@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 		03B9479924774B9000D8C26C /* SearchRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479824774B9000D8C26C /* SearchRepositoryProtocol.swift */; };
 		03B9479B24774EBF00D8C26C /* SearchCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479A24774EBF00D8C26C /* SearchCellModel.swift */; };
 		03B9479E2477522900D8C26C /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479D2477522900D8C26C /* View+AnyView.swift */; };
+		03B947A12477566900D8C26C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03B947A02477566900D8C26C /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B947A12477566900D8C26C /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +274,9 @@
 			dependencies = (
 			);
 			name = ItunesSimpleSearch;
+			packageProductDependencies = (
+				03B947A02477566900D8C26C /* SDWebImageSwiftUI */,
+			);
 			productName = ItunesSimpleSearch;
 			productReference = 039630F6247720C80081E2A4 /* ItunesSimpleSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +349,9 @@
 				Base,
 			);
 			mainGroup = 039630ED247720C80081E2A4;
+			packageReferences = (
+				03B9479F2477566900D8C26C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 039630F7247720C80081E2A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -730,6 +738,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03B9479F2477566900D8C26C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03B947A02477566900D8C26C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03B9479F2477566900D8C26C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 039630EE247720C80081E2A4 /* Project object */;
 }

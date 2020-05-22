@@ -9,15 +9,19 @@
 import Foundation
 
 struct SearchCellModel: Identifiable {
-    let songName: String
-    let artistName: String
-    let coverUrl: String
     let id: UUID = UUID()
 
-    init(songName: String, artistName: String, coverUrl: String) {
+    let songName: String
+    let artistName: String
+    let coverUrlString: String
+    var coverUrl: URL? {
+        return URL(string: self.coverUrlString)
+    }
+
+    init(songName: String, artistName: String, coverUrlString: String) {
         self.songName = songName
         self.artistName = artistName
-        self.coverUrl = coverUrl
+        self.coverUrlString = coverUrlString
     }
 
     init?(entity: ItunesEntity) {
@@ -28,6 +32,6 @@ struct SearchCellModel: Identifiable {
         }
         self.songName = songName
         self.artistName = artistName
-        self.coverUrl = coverUrl
+        self.coverUrlString = coverUrl
     }
 }

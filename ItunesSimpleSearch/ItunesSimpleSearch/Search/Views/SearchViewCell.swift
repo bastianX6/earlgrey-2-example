@@ -6,6 +6,7 @@
 //  Copyright © 2020 Bastián Véliz Vega. All rights reserved.
 //
 
+import SDWebImageSwiftUI
 import SwiftUI
 
 struct SearchViewCell: View {
@@ -13,10 +14,12 @@ struct SearchViewCell: View {
 
     var body: some View {
         HStack {
-            Image(systemName: "play.circle.fill")
+            WebImage(url: self.model.coverUrl)
                 .resizable()
-                .frame(width: 40, height: 40)
-                .cornerRadius(20)
+                .placeholder(Image(systemName: "play.circle.fill"))
+                .scaledToFit()
+                .frame(width: 50, height: 50, alignment: .center)
+                .cornerRadius(25)
             VStack {
                 Text(self.model.songName)
                     .frame(minWidth: 0,
@@ -35,15 +38,15 @@ struct SearchViewCell: View {
 struct SearchViewCell_Previews: PreviewProvider {
     static let model = SearchCellModel(songName: "a song",
                                        artistName: "An artist",
-                                       coverUrl: "")
+                                       coverUrlString: "")
 
     static let models: [SearchCellModel] = [
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrl: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrl: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrl: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrl: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrl: ""),
-        SearchCellModel(songName: "a song", artistName: "an artist", coverUrl: "")
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: ""),
+        SearchCellModel(songName: "a song", artistName: "an artist", coverUrlString: "")
     ]
 
     static var previews: some View {
