@@ -32,12 +32,21 @@ struct SearchView: View {
                 .frame(minHeight: 0, maxHeight: .infinity)
                 .eraseToAnyView()
         case let .withData(elements):
-            return List {
-                ForEach(elements, id: \.id) { item in
-                    SearchViewCell(model: item)
+            if elements.isEmpty {
+                return Text("No results")
+                    .frame(minHeight: 0, maxHeight: .infinity)
+                    .eraseToAnyView()
+            } else {
+                return List {
+                    ForEach(elements, id: \.id) { item in
+                        NavigationLink(destination: LookupDetailView(trackId: item.trackId)) {
+                            SearchViewCell(model: item)
+                        }
+                    }
                 }
+                .eraseToAnyView()
             }
-            .eraseToAnyView()
+
         case .initial:
             return Text("Type an artist or song in search bar")
                 .frame(minHeight: 0, maxHeight: .infinity)

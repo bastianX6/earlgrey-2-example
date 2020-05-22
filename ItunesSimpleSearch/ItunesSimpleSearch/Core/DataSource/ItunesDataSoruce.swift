@@ -47,7 +47,7 @@ class ItunesDataSoruce: ItunesDataSourceProtocol {
         let urlString = Endpoints.lookup.path
         let query = "\(id)"
 
-        guard let url = URL(string: urlString + "?term=" + query) else {
+        guard let url = URL(string: urlString + "?id=" + query) else {
             completion(.failure(NetworkClientError.noUrl))
             return
         }

@@ -51,8 +51,13 @@ struct LookupDetailView: View {
                     .frame(width: 100, height: 100, alignment: .center)
                     .cornerRadius(50)
                 Text(model.songName)
-                Text(model.albumName).italic()
-                Text(model.artistName).bold()
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                Text(model.albumName)
+                    .italic()
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                Text(model.artistName)
+                    .bold()
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
             }
         }
     }
