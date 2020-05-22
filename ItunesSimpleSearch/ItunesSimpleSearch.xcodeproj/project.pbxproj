@@ -32,6 +32,8 @@
 		03B9479B24774EBF00D8C26C /* SearchCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479A24774EBF00D8C26C /* SearchCellModel.swift */; };
 		03B9479E2477522900D8C26C /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479D2477522900D8C26C /* View+AnyView.swift */; };
 		03B947A12477566900D8C26C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03B947A02477566900D8C26C /* SDWebImageSwiftUI */; };
+		03B947A524775C9B00D8C26C /* LookupRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947A424775C9B00D8C26C /* LookupRepositoryProtocol.swift */; };
+		03B947A724775F4900D8C26C /* LookupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947A624775F4900D8C26C /* LookupRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		03B9479824774B9000D8C26C /* SearchRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryProtocol.swift; sourceTree = "<group>"; };
 		03B9479A24774EBF00D8C26C /* SearchCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellModel.swift; sourceTree = "<group>"; };
 		03B9479D2477522900D8C26C /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
+		03B947A424775C9B00D8C26C /* LookupRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupRepositoryProtocol.swift; sourceTree = "<group>"; };
+		03B947A624775F4900D8C26C /* LookupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				039630FF247720CA0081E2A4 /* Assets.xcassets */,
 				03963129247720EF0081E2A4 /* Core */,
 				03963104247720CA0081E2A4 /* LaunchScreen.storyboard */,
+				03B947A224775B9100D8C26C /* Lookup */,
 				03963101247720CA0081E2A4 /* Preview Content */,
 				0396314324772BE60081E2A4 /* Search */,
 			);
@@ -256,6 +261,23 @@
 				03B9479D2477522900D8C26C /* View+AnyView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		03B947A224775B9100D8C26C /* Lookup */ = {
+			isa = PBXGroup;
+			children = (
+				03B947A324775C8600D8C26C /* Repository */,
+			);
+			path = Lookup;
+			sourceTree = "<group>";
+		};
+		03B947A324775C8600D8C26C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				03B947A424775C9B00D8C26C /* LookupRepositoryProtocol.swift */,
+				03B947A624775F4900D8C26C /* LookupRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,8 +418,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396314724772F1A0081E2A4 /* SearchBar.swift in Sources */,
+				03B947A524775C9B00D8C26C /* LookupRepositoryProtocol.swift in Sources */,
 				0396312F247721800081E2A4 /* ItunesSearchResponse.swift in Sources */,
 				0396313B2477238C0081E2A4 /* NetworkClientProtocol.swift in Sources */,
+				03B947A724775F4900D8C26C /* LookupRepository.swift in Sources */,
 				039630FA247720C80081E2A4 /* AppDelegate.swift in Sources */,
 				03963141247725E00081E2A4 /* NetworkClient.swift in Sources */,
 				0396314524772DCF0081E2A4 /* SearchView.swift in Sources */,
