@@ -120,6 +120,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0359A890247823A500984DCC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				03963129247720EF0081E2A4 /* Core */,
+				03B947A224775B9100D8C26C /* Lookup */,
+				0396314324772BE60081E2A4 /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		039630ED247720C80081E2A4 = {
 			isa = PBXGroup;
 			children = (
@@ -143,16 +153,14 @@
 		039630F8247720C80081E2A4 /* ItunesSimpleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				0359A890247823A500984DCC /* Modules */,
 				03963107247720CA0081E2A4 /* Info.plist */,
 				039630F9247720C80081E2A4 /* AppDelegate.swift */,
 				039630FD247720C80081E2A4 /* ContentView.swift */,
 				039630FB247720C80081E2A4 /* SceneDelegate.swift */,
 				039630FF247720CA0081E2A4 /* Assets.xcassets */,
-				03963129247720EF0081E2A4 /* Core */,
 				03963104247720CA0081E2A4 /* LaunchScreen.storyboard */,
-				03B947A224775B9100D8C26C /* Lookup */,
 				03963101247720CA0081E2A4 /* Preview Content */,
-				0396314324772BE60081E2A4 /* Search */,
 			);
 			path = ItunesSimpleSearch;
 			sourceTree = "<group>";
@@ -189,7 +197,7 @@
 				0396312A2477211B0081E2A4 /* DataSource */,
 				0396312B2477214D0081E2A4 /* Entities */,
 				039631392477236D0081E2A4 /* Networking */,
-				03B9479C2477521500D8C26C /* Utils */,
+				03B9479C2477521500D8C26C /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -261,12 +269,12 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		03B9479C2477521500D8C26C /* Utils */ = {
+		03B9479C2477521500D8C26C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				03B9479D2477522900D8C26C /* View+AnyView.swift */,
 			);
-			path = Utils;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		03B947A224775B9100D8C26C /* Lookup */ = {
@@ -562,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -616,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
