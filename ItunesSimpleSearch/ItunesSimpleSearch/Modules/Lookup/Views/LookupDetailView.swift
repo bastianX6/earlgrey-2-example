@@ -74,7 +74,7 @@ struct LookupDetailView_Previews: PreviewProvider {
         }
     }
 
-    struct PreviewLookupRepository: LookupRepositoryProtocol {
+    class PreviewLookupRepository: LookupRepositoryProtocol {
         func getDetail(id _: Int64,
                        completion: @escaping (Result<LookupDetailModel, Error>) -> Void) {
             let model = LookupDetailModel(artistName: "an artist",

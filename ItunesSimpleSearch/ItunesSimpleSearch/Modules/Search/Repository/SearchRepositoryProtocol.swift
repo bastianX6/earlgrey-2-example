@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SearchRepositoryProtocol {
+protocol SearchRepositoryProtocol: Component {
     func search(text: String,
                 completion: @escaping (Result<[ItunesEntity], Error>) -> Void)
     func cancelPreviousSearch()

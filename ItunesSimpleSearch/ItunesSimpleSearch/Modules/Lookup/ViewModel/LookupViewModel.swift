@@ -11,7 +11,7 @@ import Foundation
 class LookupViewModel: ObservableObject {
     var objectWillChange = PassthroughSubject<LookupViewModel, Never>()
 
-    private let repository: LookupRepositoryProtocol
+    @Inject var repository: LookupRepositoryProtocol
 
     var state: LookupViewState<LookupDetailModel> = .loading {
         didSet {
@@ -23,9 +23,7 @@ class LookupViewModel: ObservableObject {
         self.repository = repository
     }
 
-    convenience init() {
-        self.init(repository: LookupRepository())
-    }
+    init() {}
 
     func loadDetail(trackId: Int64) {
         self.updateState(.loading)

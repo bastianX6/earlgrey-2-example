@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol LookupRepositoryProtocol {
+protocol LookupRepositoryProtocol: Component {
     func getDetail(id: Int64,
                    completion: @escaping (Result<LookupDetailModel, Error>) -> Void)
     func cancelPreviousSearch()

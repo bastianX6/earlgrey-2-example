@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0359A8932478249900984DCC /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8922478249900984DCC /* Inject.swift */; };
+		0359A8952478250500984DCC /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8942478250500984DCC /* Resolver.swift */; };
+		0359A8972478253D00984DCC /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8962478253D00984DCC /* Component.swift */; };
 		039630FA247720C80081E2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630F9247720C80081E2A4 /* AppDelegate.swift */; };
 		039630FC247720C80081E2A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FB247720C80081E2A4 /* SceneDelegate.swift */; };
 		039630FE247720C80081E2A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FD247720C80081E2A4 /* ContentView.swift */; };
 		03963100247720CA0081E2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039630FF247720CA0081E2A4 /* Assets.xcassets */; };
 		03963103247720CA0081E2A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03963102247720CA0081E2A4 /* Preview Assets.xcassets */; };
 		03963106247720CA0081E2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03963104247720CA0081E2A4 /* LaunchScreen.storyboard */; };
-		03963111247720CB0081E2A4 /* ItunesSimpleSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963110247720CB0081E2A4 /* ItunesSimpleSearchTests.swift */; };
 		0396311C247720CB0081E2A4 /* ItunesSimpleSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396311B247720CB0081E2A4 /* ItunesSimpleSearchUITests.swift */; };
 		0396312D247721610081E2A4 /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312C247721610081E2A4 /* ItunesEntity.swift */; };
 		0396312F247721800081E2A4 /* ItunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312E247721800081E2A4 /* ItunesSearchResponse.swift */; };
@@ -27,6 +29,7 @@
 		0396314724772F1A0081E2A4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396314624772F1A0081E2A4 /* SearchBar.swift */; };
 		03963149247731350081E2A4 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963148247731350081E2A4 /* SearchViewCell.swift */; };
 		0396314B247736140081E2A4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396314A247736140081E2A4 /* SearchViewModel.swift */; };
+		039D89FD24783CF400AF7478 /* ItunesSimpleSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963110247720CB0081E2A4 /* ItunesSimpleSearchTests.swift */; };
 		03B9479724774B6D00D8C26C /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479624774B6D00D8C26C /* SearchRepository.swift */; };
 		03B9479924774B9000D8C26C /* SearchRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479824774B9000D8C26C /* SearchRepositoryProtocol.swift */; };
 		03B9479B24774EBF00D8C26C /* SearchCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9479A24774EBF00D8C26C /* SearchCellModel.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0359A8922478249900984DCC /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		0359A8942478250500984DCC /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		0359A8962478253D00984DCC /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		039630F6247720C80081E2A4 /* ItunesSimpleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSimpleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039630F9247720C80081E2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039630FB247720C80081E2A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,16 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		0359A8912478245900984DCC /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				0359A8922478249900984DCC /* Inject.swift */,
+				0359A8942478250500984DCC /* Resolver.swift */,
+				0359A8962478253D00984DCC /* Component.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
 		039630ED247720C80081E2A4 = {
 			isa = PBXGroup;
 			children = (
@@ -153,13 +169,13 @@
 		039630F8247720C80081E2A4 /* ItunesSimpleSearch */ = {
 			isa = PBXGroup;
 			children = (
-				0359A890247823A500984DCC /* Modules */,
 				03963107247720CA0081E2A4 /* Info.plist */,
 				039630F9247720C80081E2A4 /* AppDelegate.swift */,
 				039630FD247720C80081E2A4 /* ContentView.swift */,
 				039630FB247720C80081E2A4 /* SceneDelegate.swift */,
 				039630FF247720CA0081E2A4 /* Assets.xcassets */,
 				03963104247720CA0081E2A4 /* LaunchScreen.storyboard */,
+				0359A890247823A500984DCC /* Modules */,
 				03963101247720CA0081E2A4 /* Preview Content */,
 			);
 			path = ItunesSimpleSearch;
@@ -194,6 +210,7 @@
 		03963129247720EF0081E2A4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0359A8912478245900984DCC /* DependencyInjection */,
 				0396312A2477211B0081E2A4 /* DataSource */,
 				0396312B2477214D0081E2A4 /* Entities */,
 				039631392477236D0081E2A4 /* Networking */,
@@ -459,12 +476,15 @@
 				039630FA247720C80081E2A4 /* AppDelegate.swift in Sources */,
 				03963141247725E00081E2A4 /* NetworkClient.swift in Sources */,
 				0396314524772DCF0081E2A4 /* SearchView.swift in Sources */,
+				0359A8952478250500984DCC /* Resolver.swift in Sources */,
+				0359A8972478253D00984DCC /* Component.swift in Sources */,
 				0396314B247736140081E2A4 /* SearchViewModel.swift in Sources */,
 				03B9479724774B6D00D8C26C /* SearchRepository.swift in Sources */,
 				03963131247721CA0081E2A4 /* ItunesDataSourceProtocol.swift in Sources */,
 				03B9479B24774EBF00D8C26C /* SearchCellModel.swift in Sources */,
 				03B9479E2477522900D8C26C /* View+AnyView.swift in Sources */,
 				039630FC247720C80081E2A4 /* SceneDelegate.swift in Sources */,
+				0359A8932478249900984DCC /* Inject.swift in Sources */,
 				03963149247731350081E2A4 /* SearchViewCell.swift in Sources */,
 				039631332477227F0081E2A4 /* ItunesDataSoruce.swift in Sources */,
 				0396313F247725240081E2A4 /* NetworkClientError.swift in Sources */,
@@ -481,7 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03963111247720CB0081E2A4 /* ItunesSimpleSearchTests.swift in Sources */,
+				039D89FD24783CF400AF7478 /* ItunesSimpleSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +702,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				INFOPLIST_FILE = ItunesSimpleSearchTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -704,7 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				INFOPLIST_FILE = ItunesSimpleSearchTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

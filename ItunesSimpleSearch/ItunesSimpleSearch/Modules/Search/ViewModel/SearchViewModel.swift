@@ -11,7 +11,7 @@ import Foundation
 
 class SearchViewModel: ObservableObject {
     var objectWillChange = PassthroughSubject<SearchViewModel, Never>()
-    private let repository: SearchRepositoryProtocol
+    @Inject var repository: SearchRepositoryProtocol
 
     var text: String = "" {
         didSet {
@@ -29,9 +29,7 @@ class SearchViewModel: ObservableObject {
         self.repository = repository
     }
 
-    convenience init() {
-        self.init(repository: SearchRepository())
-    }
+    init() {}
 
     func search() {
         self.updateState(.loading)
