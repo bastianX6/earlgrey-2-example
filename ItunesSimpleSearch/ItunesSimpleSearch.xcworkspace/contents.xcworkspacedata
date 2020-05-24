@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:EarlGrey2/EarlGrey.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ItunesSimpleSearch.xcodeproj">
    </FileRef>
 </Workspace>
