@@ -12,13 +12,13 @@
 		0359A8972478253D00984DCC /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8962478253D00984DCC /* Component.swift */; };
 		037E7A76247A05AD00AC105A /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037E7A75247A05AD00AC105A /* libTestLib.a */; };
 		037E7A87247A105A00AC105A /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037E7A84247A104900AC105A /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		037E7A8C247A186500AC105A /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E7A8B247A186500AC105A /* EarlGrey.swift */; };
 		039630FA247720C80081E2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630F9247720C80081E2A4 /* AppDelegate.swift */; };
 		039630FC247720C80081E2A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FB247720C80081E2A4 /* SceneDelegate.swift */; };
 		039630FE247720C80081E2A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FD247720C80081E2A4 /* ContentView.swift */; };
 		03963100247720CA0081E2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039630FF247720CA0081E2A4 /* Assets.xcassets */; };
 		03963103247720CA0081E2A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03963102247720CA0081E2A4 /* Preview Assets.xcassets */; };
 		03963106247720CA0081E2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03963104247720CA0081E2A4 /* LaunchScreen.storyboard */; };
-		0396311C247720CB0081E2A4 /* ItunesSimpleSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396311B247720CB0081E2A4 /* ItunesSimpleSearchUITests.swift */; };
 		0396312D247721610081E2A4 /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312C247721610081E2A4 /* ItunesEntity.swift */; };
 		0396312F247721800081E2A4 /* ItunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312E247721800081E2A4 /* ItunesSearchResponse.swift */; };
 		03963131247721CA0081E2A4 /* ItunesDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963130247721CA0081E2A4 /* ItunesDataSourceProtocol.swift */; };
@@ -110,6 +110,8 @@
 		037E7A73247A058F00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E7A75247A05AD00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E7A78247A104900AC105A /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey2/EarlGrey.xcodeproj; sourceTree = "<group>"; };
+		037E7A8A247A14A300AC105A /* ItunesSimpleSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ItunesSimpleSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		037E7A8B247A186500AC105A /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		039630F6247720C80081E2A4 /* ItunesSimpleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSimpleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039630F9247720C80081E2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039630FB247720C80081E2A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +124,6 @@
 		03963110247720CB0081E2A4 /* ItunesSimpleSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSimpleSearchTests.swift; sourceTree = "<group>"; };
 		03963112247720CB0081E2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03963117247720CB0081E2A4 /* ItunesSimpleSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesSimpleSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0396311B247720CB0081E2A4 /* ItunesSimpleSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSimpleSearchUITests.swift; sourceTree = "<group>"; };
 		0396311D247720CB0081E2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0396312C247721610081E2A4 /* ItunesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesEntity.swift; sourceTree = "<group>"; };
 		0396312E247721800081E2A4 /* ItunesSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchResponse.swift; sourceTree = "<group>"; };
@@ -272,8 +273,9 @@
 		0396311A247720CB0081E2A4 /* ItunesSimpleSearchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0396311B247720CB0081E2A4 /* ItunesSimpleSearchUITests.swift */,
 				0396311D247720CB0081E2A4 /* Info.plist */,
+				037E7A8A247A14A300AC105A /* ItunesSimpleSearch-Bridging-Header.h */,
+				037E7A8B247A186500AC105A /* EarlGrey.swift */,
 			);
 			path = ItunesSimpleSearchUITests;
 			sourceTree = "<group>";
@@ -618,7 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0396311C247720CB0081E2A4 /* ItunesSimpleSearchUITests.swift in Sources */,
+				037E7A8C247A186500AC105A /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,6 +864,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.ItunesSimpleSearchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ItunesSimpleSearchUITests/ItunesSimpleSearch-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ItunesSimpleSearch;
@@ -887,6 +890,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.ItunesSimpleSearchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ItunesSimpleSearchUITests/ItunesSimpleSearch-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ItunesSimpleSearch;
