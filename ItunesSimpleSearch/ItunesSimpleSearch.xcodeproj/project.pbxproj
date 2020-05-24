@@ -10,6 +10,8 @@
 		0359A8932478249900984DCC /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8922478249900984DCC /* Inject.swift */; };
 		0359A8952478250500984DCC /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8942478250500984DCC /* Resolver.swift */; };
 		0359A8972478253D00984DCC /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8962478253D00984DCC /* Component.swift */; };
+		037E7A76247A05AD00AC105A /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037E7A75247A05AD00AC105A /* libTestLib.a */; };
+		037E7A87247A105A00AC105A /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037E7A84247A104900AC105A /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		039630FA247720C80081E2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630F9247720C80081E2A4 /* AppDelegate.swift */; };
 		039630FC247720C80081E2A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FB247720C80081E2A4 /* SceneDelegate.swift */; };
 		039630FE247720C80081E2A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FD247720C80081E2A4 /* ContentView.swift */; };
@@ -43,6 +45,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		037E7A7F247A104900AC105A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 037E7A78247A104900AC105A /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD62395120F56A9700049E81;
+			remoteInfo = CommonLib;
+		};
+		037E7A81247A104900AC105A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 037E7A78247A104900AC105A /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FDF9E03520F82D090005DCF2;
+			remoteInfo = UILib;
+		};
+		037E7A83247A104900AC105A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 037E7A78247A104900AC105A /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD623A4920F957BE00049E81;
+			remoteInfo = AppFramework;
+		};
+		037E7A85247A104900AC105A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 037E7A78247A104900AC105A /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD5048F820FB225100261CBE;
+			remoteInfo = TestLib;
+		};
 		0396310D247720CB0081E2A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 039630EE247720C80081E2A4 /* Project object */;
@@ -59,10 +89,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		037E7A77247A0E9400AC105A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../ItunesSimpleSearch.app/Frameworks";
+			dstSubfolderSpec = 0;
+			files = (
+				037E7A87247A105A00AC105A /* AppFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0359A8922478249900984DCC /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		0359A8942478250500984DCC /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		0359A8962478253D00984DCC /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		037E7A71247A057500AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		037E7A73247A058F00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		037E7A75247A05AD00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		037E7A78247A104900AC105A /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey2/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 		039630F6247720C80081E2A4 /* ItunesSimpleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSimpleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039630F9247720C80081E2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039630FB247720C80081E2A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037E7A76247A05AD00AC105A /* libTestLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,13 +194,36 @@
 			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
+		037E7A70247A057500AC105A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				037E7A75247A05AD00AC105A /* libTestLib.a */,
+				037E7A73247A058F00AC105A /* libTestLib.a */,
+				037E7A71247A057500AC105A /* libTestLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		037E7A79247A104900AC105A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				037E7A80247A104900AC105A /* libCommonLib.a */,
+				037E7A82247A104900AC105A /* libUILib.a */,
+				037E7A84247A104900AC105A /* AppFramework.framework */,
+				037E7A86247A104900AC105A /* libTestLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		039630ED247720C80081E2A4 = {
 			isa = PBXGroup;
 			children = (
+				037E7A78247A104900AC105A /* EarlGrey.xcodeproj */,
 				039630F8247720C80081E2A4 /* ItunesSimpleSearch */,
 				0396310F247720CB0081E2A4 /* ItunesSimpleSearchTests */,
 				0396311A247720CB0081E2A4 /* ItunesSimpleSearchUITests */,
 				039630F7247720C80081E2A4 /* Products */,
+				037E7A70247A057500AC105A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -378,6 +449,7 @@
 				03963113247720CB0081E2A4 /* Sources */,
 				03963114247720CB0081E2A4 /* Frameworks */,
 				03963115247720CB0081E2A4 /* Resources */,
+				037E7A77247A0E9400AC105A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -426,6 +498,12 @@
 			);
 			productRefGroup = 039630F7247720C80081E2A4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 037E7A79247A104900AC105A /* Products */;
+					ProjectRef = 037E7A78247A104900AC105A /* EarlGrey.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				039630F5247720C80081E2A4 /* ItunesSimpleSearch */,
@@ -434,6 +512,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		037E7A80247A104900AC105A /* libCommonLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommonLib.a;
+			remoteRef = 037E7A7F247A104900AC105A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		037E7A82247A104900AC105A /* libUILib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUILib.a;
+			remoteRef = 037E7A81247A104900AC105A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		037E7A84247A104900AC105A /* AppFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AppFramework.framework;
+			remoteRef = 037E7A83247A104900AC105A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		037E7A86247A104900AC105A /* libTestLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestLib.a;
+			remoteRef = 037E7A85247A104900AC105A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		039630F4247720C80081E2A4 /* Resources */ = {
@@ -750,11 +859,16 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.ItunesSimpleSearchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ItunesSimpleSearch;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/EarlGrey2/**",
+					"$(SRCROOT)/EarlGrey2/Submodules/eDistantObject/**",
+				);
 			};
 			name = Debug;
 		};
@@ -770,11 +884,16 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.ItunesSimpleSearchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ItunesSimpleSearch;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/EarlGrey2/**",
+					"$(SRCROOT)/EarlGrey2/Submodules/eDistantObject/**",
+				);
 			};
 			name = Release;
 		};
