@@ -20,17 +20,30 @@ struct SearchViewCell: View {
                 .scaledToFit()
                 .frame(width: 50, height: 50, alignment: .center)
                 .cornerRadius(25)
+                .accessibility(identifier: Identifiers.albumCover.stringValue)
             VStack {
                 Text(self.model.songName)
                     .frame(minWidth: 0,
                            maxWidth: .infinity,
                            alignment: .leading)
+                    .accessibility(identifier: Identifiers.song.stringValue)
                 Text(self.model.artistName)
                     .bold()
                     .frame(minWidth: 0,
                            maxWidth: .infinity,
                            alignment: .leading)
+                    .accessibility(identifier: Identifiers.artist.stringValue)
             }
+        }
+    }
+
+    private enum Identifiers: String {
+        case albumCover
+        case song
+        case artist
+
+        var stringValue: String {
+            return "SearchViewCell." + self.rawValue
         }
     }
 }

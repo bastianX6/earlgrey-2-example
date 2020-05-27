@@ -14,7 +14,9 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                SearchBar(text: self.$viewModel.text, placeholder: "seach an artist")
+                SearchBar(text: self.$viewModel.text,
+                          placeholder: "seach an artist")
+                    .accessibility(identifier: SearchViewIdentifiers.searchbar.id)
                 self.getView(forState: self.viewModel.state)
             }
             .navigationBarTitle("Itunes Search")
@@ -26,15 +28,18 @@ struct SearchView: View {
         case .loading:
             return Text("Loading...")
                 .frame(minHeight: 0, maxHeight: .infinity)
+                .accessibility(identifier: SearchViewIdentifiers.loading.id)
                 .eraseToAnyView()
         case let .error(error):
             return Text("Error: \(error.localizedDescription)")
                 .frame(minHeight: 0, maxHeight: .infinity)
+                .accessibility(identifier: SearchViewIdentifiers.error.id)
                 .eraseToAnyView()
         case let .withData(elements):
             if elements.isEmpty {
                 return Text("No results")
                     .frame(minHeight: 0, maxHeight: .infinity)
+                    .accessibility(identifier: SearchViewIdentifiers.empty.id)
                     .eraseToAnyView()
             } else {
                 return List {
@@ -42,6 +47,8 @@ struct SearchView: View {
                         NavigationLink(destination: LookupDetailView(trackId: item.trackId)) {
                             SearchViewCell(model: item)
                         }
+                        .accessibility(identifier: SearchViewIdentifiers.cell.id)
+                        .accessibility(label: Text(item.songName))
                     }
                 }
                 .eraseToAnyView()
@@ -50,7 +57,21 @@ struct SearchView: View {
         case .initial:
             return Text("Type an artist or song in search bar")
                 .frame(minHeight: 0, maxHeight: .infinity)
+                .accessibility(identifier: SearchViewIdentifiers.initial.id)
                 .eraseToAnyView()
+        }
+    }
+
+    enum SearchViewIdentifiers: String {
+        case loading
+        case error
+        case empty
+        case initial
+        case cell
+        case searchbar
+
+        var id: String {
+            return "SearchView." + self.rawValue
         }
     }
 }

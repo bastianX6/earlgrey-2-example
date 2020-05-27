@@ -10,9 +10,12 @@
 		0359A8932478249900984DCC /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8922478249900984DCC /* Inject.swift */; };
 		0359A8952478250500984DCC /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8942478250500984DCC /* Resolver.swift */; };
 		0359A8972478253D00984DCC /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8962478253D00984DCC /* Component.swift */; };
+		03629EA3247AF1B800589DB8 /* EarlGrey+NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03629EA2247AF1B800589DB8 /* EarlGrey+NSArray.swift */; };
 		037E7A76247A05AD00AC105A /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037E7A75247A05AD00AC105A /* libTestLib.a */; };
 		037E7A87247A105A00AC105A /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037E7A84247A104900AC105A /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		037E7A8C247A186500AC105A /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E7A8B247A186500AC105A /* EarlGrey.swift */; };
+		037E7A90247AE77300AC105A /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E7A8F247AE77300AC105A /* SearchTests.swift */; };
+		037E7A92247AEA2F00AC105A /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E7A91247AEA2F00AC105A /* AccessibilityIdentifiers.swift */; };
 		039630FA247720C80081E2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630F9247720C80081E2A4 /* AppDelegate.swift */; };
 		039630FC247720C80081E2A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FB247720C80081E2A4 /* SceneDelegate.swift */; };
 		039630FE247720C80081E2A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039630FD247720C80081E2A4 /* ContentView.swift */; };
@@ -106,12 +109,15 @@
 		0359A8922478249900984DCC /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		0359A8942478250500984DCC /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		0359A8962478253D00984DCC /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		03629EA2247AF1B800589DB8 /* EarlGrey+NSArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EarlGrey+NSArray.swift"; sourceTree = "<group>"; };
 		037E7A71247A057500AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E7A73247A058F00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E7A75247A05AD00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E7A78247A104900AC105A /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey2/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 		037E7A8A247A14A300AC105A /* ItunesSimpleSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ItunesSimpleSearch-Bridging-Header.h"; sourceTree = "<group>"; };
 		037E7A8B247A186500AC105A /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
+		037E7A8F247AE77300AC105A /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
+		037E7A91247AEA2F00AC105A /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		039630F6247720C80081E2A4 /* ItunesSimpleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSimpleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039630F9247720C80081E2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039630FB247720C80081E2A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +201,15 @@
 			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
+		03629E9D247AF19F00589DB8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				037E7A91247AEA2F00AC105A /* AccessibilityIdentifiers.swift */,
+				03629EA2247AF1B800589DB8 /* EarlGrey+NSArray.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		037E7A70247A057500AC105A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,9 +288,11 @@
 		0396311A247720CB0081E2A4 /* ItunesSimpleSearchUITests */ = {
 			isa = PBXGroup;
 			children = (
+				03629E9D247AF19F00589DB8 /* Utils */,
 				0396311D247720CB0081E2A4 /* Info.plist */,
 				037E7A8A247A14A300AC105A /* ItunesSimpleSearch-Bridging-Header.h */,
 				037E7A8B247A186500AC105A /* EarlGrey.swift */,
+				037E7A8F247AE77300AC105A /* SearchTests.swift */,
 			);
 			path = ItunesSimpleSearchUITests;
 			sourceTree = "<group>";
@@ -620,7 +637,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037E7A92247AEA2F00AC105A /* AccessibilityIdentifiers.swift in Sources */,
 				037E7A8C247A186500AC105A /* EarlGrey.swift in Sources */,
+				037E7A90247AE77300AC105A /* SearchTests.swift in Sources */,
+				03629EA3247AF1B800589DB8 /* EarlGrey+NSArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

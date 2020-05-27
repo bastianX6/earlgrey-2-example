@@ -11,7 +11,7 @@ import SwiftUI
 
 struct LookupDetailView: View {
     @ObservedObject private var viewModel: LookupViewModel
-    let trackId: Int64
+    private let trackId: Int64
 
     init(trackId: Int64, viewModel: LookupViewModel = LookupViewModel()) {
         self.trackId = trackId
@@ -30,10 +30,12 @@ struct LookupDetailView: View {
         case .loading:
             return Text("Loading...")
                 .frame(minHeight: 0, maxHeight: .infinity)
+                .accessibility(identifier: LookupDetailViewIdentifiers.loading.id)
                 .eraseToAnyView()
         case let .error(error):
             return Text("Error: \(error.localizedDescription)")
                 .frame(minHeight: 0, maxHeight: .infinity)
+                .accessibility(identifier: LookupDetailViewIdentifiers.error.id)
                 .eraseToAnyView()
         case let .withData(model):
             return self.getDetailView(model: model)
@@ -50,15 +52,32 @@ struct LookupDetailView: View {
                     .scaledToFit()
                     .frame(width: 100, height: 100, alignment: .center)
                     .cornerRadius(50)
+                    .accessibility(identifier: LookupDetailViewIdentifiers.albumCover.id)
                 Text(model.songName)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                    .accessibility(identifier: LookupDetailViewIdentifiers.song.id)
                 Text(model.albumName)
                     .italic()
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                    .accessibility(identifier: LookupDetailViewIdentifiers.album.id)
                 Text(model.artistName)
                     .bold()
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                    .accessibility(identifier: LookupDetailViewIdentifiers.artist.id)
             }
+        }
+    }
+
+    enum LookupDetailViewIdentifiers: String {
+        case loading
+        case error
+        case albumCover
+        case song
+        case album
+        case artist
+
+        var id: String {
+            return "LookupDetailView." + self.rawValue
         }
     }
 }
