@@ -45,6 +45,11 @@
 		03B947AA2477604F00D8C26C /* LookupDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947A92477604F00D8C26C /* LookupDetailModel.swift */; };
 		03B947AC247761F400D8C26C /* LookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947AB247761F400D8C26C /* LookupViewModel.swift */; };
 		03B947AF247764AF00D8C26C /* LookupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947AE247764AF00D8C26C /* LookupDetailView.swift */; };
+		03FD5C8524A2D9D200DF72F3 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037E7A84247A104900AC105A /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03FD5C8924A2DD3A00DF72F3 /* HelperBundle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0358DB0B24A23AE9003F7D59 /* HelperBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		03FD5C8A24A2E36300DF72F3 /* ItunesDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963130247721CA0081E2A4 /* ItunesDataSourceProtocol.swift */; };
+		03FD5C8B24A2E37600DF72F3 /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312C247721610081E2A4 /* ItunesEntity.swift */; };
+		03FD5C8C24A2E37C00DF72F3 /* ItunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312E247721800081E2A4 /* ItunesSearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,13 @@
 			remoteGlobalIDString = 039630F5247720C80081E2A4;
 			remoteInfo = ItunesSimpleSearch;
 		};
+		03FD5C8624A2DA8000DF72F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039630EE247720C80081E2A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 039630F5247720C80081E2A4;
+			remoteInfo = ItunesSimpleSearch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,6 +112,16 @@
 			dstSubfolderSpec = 0;
 			files = (
 				037E7A87247A105A00AC105A /* AppFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FD5C8824A2DD0600DF72F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../ItunesSimpleSearch.app/EarlGreyHelperBundles";
+			dstSubfolderSpec = 0;
+			files = (
+				03FD5C8924A2DD3A00DF72F3 /* HelperBundle.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FD5C8524A2D9D200DF72F3 /* AppFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +476,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				03FD5C8724A2DA8000DF72F3 /* PBXTargetDependency */,
 			);
 			name = HelperBundle;
 			productName = HelperBundle;
@@ -505,6 +529,7 @@
 				03963114247720CB0081E2A4 /* Frameworks */,
 				03963115247720CB0081E2A4 /* Resources */,
 				037E7A77247A0E9400AC105A /* CopyFiles */,
+				03FD5C8824A2DD0600DF72F3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -691,7 +716,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FD5C8B24A2E37600DF72F3 /* ItunesEntity.swift in Sources */,
+				03FD5C8C24A2E37C00DF72F3 /* ItunesSearchResponse.swift in Sources */,
 				037E7A92247AEA2F00AC105A /* AccessibilityIdentifiers.swift in Sources */,
+				03FD5C8A24A2E36300DF72F3 /* ItunesDataSourceProtocol.swift in Sources */,
 				037E7A8C247A186500AC105A /* EarlGrey.swift in Sources */,
 				037E7A90247AE77300AC105A /* SearchTests.swift in Sources */,
 				03629EA3247AF1B800589DB8 /* EarlGrey+NSArray.swift in Sources */,
@@ -710,6 +738,11 @@
 			isa = PBXTargetDependency;
 			target = 039630F5247720C80081E2A4 /* ItunesSimpleSearch */;
 			targetProxy = 03963118247720CB0081E2A4 /* PBXContainerItemProxy */;
+		};
+		03FD5C8724A2DA8000DF72F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 039630F5247720C80081E2A4 /* ItunesSimpleSearch */;
+			targetProxy = 03FD5C8624A2DA8000DF72F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
