@@ -106,6 +106,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0358DB0B24A23AE9003F7D59 /* HelperBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelperBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0358DB0D24A23AE9003F7D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0359A8922478249900984DCC /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		0359A8942478250500984DCC /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		0359A8962478253D00984DCC /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
@@ -155,6 +157,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0358DB0824A23AE9003F7D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		039630F3247720C80081E2A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +190,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0358DB0C24A23AE9003F7D59 /* HelperBundle */ = {
+			isa = PBXGroup;
+			children = (
+				0358DB0D24A23AE9003F7D59 /* Info.plist */,
+			);
+			path = HelperBundle;
+			sourceTree = "<group>";
+		};
 		0359A890247823A500984DCC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +255,7 @@
 				039630F8247720C80081E2A4 /* ItunesSimpleSearch */,
 				0396310F247720CB0081E2A4 /* ItunesSimpleSearchTests */,
 				0396311A247720CB0081E2A4 /* ItunesSimpleSearchUITests */,
+				0358DB0C24A23AE9003F7D59 /* HelperBundle */,
 				039630F7247720C80081E2A4 /* Products */,
 				037E7A70247A057500AC105A /* Frameworks */,
 			);
@@ -249,6 +267,7 @@
 				039630F6247720C80081E2A4 /* ItunesSimpleSearch.app */,
 				0396310C247720CB0081E2A4 /* ItunesSimpleSearchTests.xctest */,
 				03963117247720CB0081E2A4 /* ItunesSimpleSearchUITests.xctest */,
+				0358DB0B24A23AE9003F7D59 /* HelperBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -423,6 +442,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0358DB0A24A23AE9003F7D59 /* HelperBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0358DB1424A23AE9003F7D59 /* Build configuration list for PBXNativeTarget "HelperBundle" */;
+			buildPhases = (
+				0358DB0724A23AE9003F7D59 /* Sources */,
+				0358DB0824A23AE9003F7D59 /* Frameworks */,
+				0358DB0924A23AE9003F7D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelperBundle;
+			productName = HelperBundle;
+			productReference = 0358DB0B24A23AE9003F7D59 /* HelperBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		039630F5247720C80081E2A4 /* ItunesSimpleSearch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03963120247720CB0081E2A4 /* Build configuration list for PBXNativeTarget "ItunesSimpleSearch" */;
@@ -490,6 +526,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Bastián Véliz Vega";
 				TargetAttributes = {
+					0358DB0A24A23AE9003F7D59 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					039630F5247720C80081E2A4 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -528,6 +567,7 @@
 				039630F5247720C80081E2A4 /* ItunesSimpleSearch */,
 				0396310B247720CB0081E2A4 /* ItunesSimpleSearchTests */,
 				03963116247720CB0081E2A4 /* ItunesSimpleSearchUITests */,
+				0358DB0A24A23AE9003F7D59 /* HelperBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -564,6 +604,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0358DB0924A23AE9003F7D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		039630F4247720C80081E2A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -591,6 +638,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0358DB0724A23AE9003F7D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		039630F2247720C80081E2A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -671,6 +725,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0358DB0E24A23AE9003F7D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/ItunesSimpleSearch.app/ItunesSimpleSearch";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				INFOPLIST_FILE = HelperBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.HelperBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/EarlGrey2/Submodules/eDistantObject/**",
+					"$(SRCROOT)/EarlGrey2/**",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0358DB0F24A23AE9003F7D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/ItunesSimpleSearch.app/ItunesSimpleSearch";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				INFOPLIST_FILE = HelperBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.HelperBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/EarlGrey2/Submodules/eDistantObject/**",
+					"$(SRCROOT)/EarlGrey2/**",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		0396311E247720CB0081E2A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -924,6 +1026,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0358DB1424A23AE9003F7D59 /* Build configuration list for PBXNativeTarget "HelperBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0358DB0E24A23AE9003F7D59 /* Debug */,
+				0358DB0F24A23AE9003F7D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		039630F1247720C80081E2A4 /* Build configuration list for PBXProject "ItunesSimpleSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
