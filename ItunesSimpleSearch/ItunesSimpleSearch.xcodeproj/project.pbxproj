@@ -11,6 +11,11 @@
 		0359A8952478250500984DCC /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8942478250500984DCC /* Resolver.swift */; };
 		0359A8972478253D00984DCC /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359A8962478253D00984DCC /* Component.swift */; };
 		03629EA3247AF1B800589DB8 /* EarlGrey+NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03629EA2247AF1B800589DB8 /* EarlGrey+NSArray.swift */; };
+		036D4EF924A3B99C00887392 /* SwiftTestHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D4EF824A3B99C00887392 /* SwiftTestHost.swift */; };
+		036D4EFA24A3B99C00887392 /* SwiftTestHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D4EF824A3B99C00887392 /* SwiftTestHost.swift */; };
+		036D4F0224A3BCFA00887392 /* DistantObject+SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D4F0124A3BCFA00887392 /* DistantObject+SwiftTestsHost.swift */; };
+		036D4F0724A3BF3C00887392 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 036D4F0624A3BF3C00887392 /* SDWebImageSwiftUI */; };
+		036D4F0924A3CAAD00887392 /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D4F0824A3CAAD00887392 /* IntegrationTests.swift */; };
 		037E7A76247A05AD00AC105A /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 037E7A75247A05AD00AC105A /* libTestLib.a */; };
 		037E7A87247A105A00AC105A /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037E7A84247A104900AC105A /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		037E7A8C247A186500AC105A /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E7A8B247A186500AC105A /* EarlGrey.swift */; };
@@ -45,11 +50,13 @@
 		03B947AA2477604F00D8C26C /* LookupDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947A92477604F00D8C26C /* LookupDetailModel.swift */; };
 		03B947AC247761F400D8C26C /* LookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947AB247761F400D8C26C /* LookupViewModel.swift */; };
 		03B947AF247764AF00D8C26C /* LookupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B947AE247764AF00D8C26C /* LookupDetailView.swift */; };
+		03C6FBEC24A3F12800503CB4 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6FBEB24A3F12800503CB4 /* JsonHelper.swift */; };
+		03EAB46F24A3FD3B00A4B1EF /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 03EAB46E24A3FD3B00A4B1EF /* search.json */; };
+		03EAB47524A3FF4C00A4B1EF /* MockLookupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EAB47424A3FF4C00A4B1EF /* MockLookupRepository.swift */; };
+		03EAB47724A400F100A4B1EF /* lookup.json in Resources */ = {isa = PBXBuildFile; fileRef = 03EAB47624A400F100A4B1EF /* lookup.json */; };
+		03FA6D9024AE648900DFE1C4 /* lookup-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 03FA6D8F24AE648900DFE1C4 /* lookup-2.json */; };
 		03FD5C8524A2D9D200DF72F3 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037E7A84247A104900AC105A /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03FD5C8924A2DD3A00DF72F3 /* HelperBundle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0358DB0B24A23AE9003F7D59 /* HelperBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		03FD5C8A24A2E36300DF72F3 /* ItunesDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03963130247721CA0081E2A4 /* ItunesDataSourceProtocol.swift */; };
-		03FD5C8B24A2E37600DF72F3 /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312C247721610081E2A4 /* ItunesEntity.swift */; };
-		03FD5C8C24A2E37C00DF72F3 /* ItunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0396312E247721800081E2A4 /* ItunesSearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +141,10 @@
 		0359A8942478250500984DCC /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		0359A8962478253D00984DCC /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		03629EA2247AF1B800589DB8 /* EarlGrey+NSArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EarlGrey+NSArray.swift"; sourceTree = "<group>"; };
+		036D4EF724A3B99C00887392 /* HelperBundle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelperBundle-Bridging-Header.h"; sourceTree = "<group>"; };
+		036D4EF824A3B99C00887392 /* SwiftTestHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestHost.swift; sourceTree = "<group>"; };
+		036D4F0124A3BCFA00887392 /* DistantObject+SwiftTestsHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DistantObject+SwiftTestsHost.swift"; sourceTree = "<group>"; };
+		036D4F0824A3CAAD00887392 /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
 		037E7A71247A057500AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E7A73247A058F00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E7A75247A05AD00AC105A /* libTestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +187,11 @@
 		03B947A92477604F00D8C26C /* LookupDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupDetailModel.swift; sourceTree = "<group>"; };
 		03B947AB247761F400D8C26C /* LookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupViewModel.swift; sourceTree = "<group>"; };
 		03B947AE247764AF00D8C26C /* LookupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupDetailView.swift; sourceTree = "<group>"; };
+		03C6FBEB24A3F12800503CB4 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		03EAB46E24A3FD3B00A4B1EF /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		03EAB47424A3FF4C00A4B1EF /* MockLookupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLookupRepository.swift; sourceTree = "<group>"; };
+		03EAB47624A400F100A4B1EF /* lookup.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lookup.json; sourceTree = "<group>"; };
+		03FA6D8F24AE648900DFE1C4 /* lookup-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "lookup-2.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036D4F0724A3BF3C00887392 /* SDWebImageSwiftUI in Frameworks */,
 				037E7A76247A05AD00AC105A /* libTestLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +233,11 @@
 		0358DB0C24A23AE9003F7D59 /* HelperBundle */ = {
 			isa = PBXGroup;
 			children = (
+				036D4EF724A3B99C00887392 /* HelperBundle-Bridging-Header.h */,
 				0358DB0D24A23AE9003F7D59 /* Info.plist */,
+				036D4F0124A3BCFA00887392 /* DistantObject+SwiftTestsHost.swift */,
+				036D4EF824A3B99C00887392 /* SwiftTestHost.swift */,
+				03C6FBE524A3F10A00503CB4 /* Mock */,
 			);
 			path = HelperBundle;
 			sourceTree = "<group>";
@@ -335,6 +356,7 @@
 				037E7A8A247A14A300AC105A /* ItunesSimpleSearch-Bridging-Header.h */,
 				037E7A8B247A186500AC105A /* EarlGrey.swift */,
 				037E7A8F247AE77300AC105A /* SearchTests.swift */,
+				036D4F0824A3CAAD00887392 /* IntegrationTests.swift */,
 			);
 			path = ItunesSimpleSearchUITests;
 			sourceTree = "<group>";
@@ -462,6 +484,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		03C6FBE524A3F10A00503CB4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				03FA6D8F24AE648900DFE1C4 /* lookup-2.json */,
+				03EAB47624A400F100A4B1EF /* lookup.json */,
+				03EAB46E24A3FD3B00A4B1EF /* search.json */,
+				03C6FBEB24A3F12800503CB4 /* JsonHelper.swift */,
+				03EAB47424A3FF4C00A4B1EF /* MockLookupRepository.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -537,6 +571,9 @@
 				03963119247720CB0081E2A4 /* PBXTargetDependency */,
 			);
 			name = ItunesSimpleSearchUITests;
+			packageProductDependencies = (
+				036D4F0624A3BF3C00887392 /* SDWebImageSwiftUI */,
+			);
 			productName = ItunesSimpleSearchUITests;
 			productReference = 03963117247720CB0081E2A4 /* ItunesSimpleSearchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -553,6 +590,7 @@
 				TargetAttributes = {
 					0358DB0A24A23AE9003F7D59 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					039630F5247720C80081E2A4 = {
 						CreatedOnToolsVersion = 11.5;
@@ -633,6 +671,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FA6D9024AE648900DFE1C4 /* lookup-2.json in Resources */,
+				03EAB47724A400F100A4B1EF /* lookup.json in Resources */,
+				03EAB46F24A3FD3B00A4B1EF /* search.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +708,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C6FBEC24A3F12800503CB4 /* JsonHelper.swift in Sources */,
+				036D4F0224A3BCFA00887392 /* DistantObject+SwiftTestsHost.swift in Sources */,
+				03EAB47524A3FF4C00A4B1EF /* MockLookupRepository.swift in Sources */,
+				036D4EFA24A3B99C00887392 /* SwiftTestHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,10 +761,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FD5C8B24A2E37600DF72F3 /* ItunesEntity.swift in Sources */,
-				03FD5C8C24A2E37C00DF72F3 /* ItunesSearchResponse.swift in Sources */,
+				036D4F0924A3CAAD00887392 /* IntegrationTests.swift in Sources */,
+				036D4EF924A3B99C00887392 /* SwiftTestHost.swift in Sources */,
 				037E7A92247AEA2F00AC105A /* AccessibilityIdentifiers.swift in Sources */,
-				03FD5C8A24A2E36300DF72F3 /* ItunesDataSourceProtocol.swift in Sources */,
 				037E7A8C247A186500AC105A /* EarlGrey.swift in Sources */,
 				037E7A90247AE77300AC105A /* SearchTests.swift in Sources */,
 				03629EA3247AF1B800589DB8 /* EarlGrey+NSArray.swift in Sources */,
@@ -762,9 +806,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/ItunesSimpleSearch.app/ItunesSimpleSearch";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HelperBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
@@ -774,6 +820,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HelperBundle/HelperBundle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/EarlGrey2/Submodules/eDistantObject/**",
 					"$(SRCROOT)/EarlGrey2/**",
@@ -786,9 +835,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/ItunesSimpleSearch.app/ItunesSimpleSearch";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HelperBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
@@ -798,6 +849,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HelperBundle/HelperBundle-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/EarlGrey2/Submodules/eDistantObject/**",
 					"$(SRCROOT)/EarlGrey2/**",
@@ -1118,6 +1171,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		036D4F0624A3BF3C00887392 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03B9479F2477566900D8C26C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		03B947A02477566900D8C26C /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 03B9479F2477566900D8C26C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;

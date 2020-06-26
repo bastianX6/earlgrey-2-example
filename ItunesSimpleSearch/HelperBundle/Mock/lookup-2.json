@@ -1,0 +1,39 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "wrapperType": "track",
+      "kind": "song",
+      "artistId": 434832774,
+      "collectionId": 1258804404,
+      "trackId": 1258805162,
+      "artistName": "Romeo Santos, Daddy Yankee & Nicky Jam",
+      "collectionName": "Golden",
+      "trackName": "Bella y Sensual",
+      "collectionCensoredName": "Golden",
+      "trackCensoredName": "Bella y Sensual",
+      "collectionArtistName": "Romeo Santos",
+      "artistViewUrl": "https://itunes.apple.com/us/artist/romeo-santos/434832774?uo=4",
+      "collectionViewUrl": "https://itunes.apple.com/us/album/bella-y-sensual/1258804404?i=1258805162&uo=4",
+      "trackViewUrl": "https://itunes.apple.com/us/album/bella-y-sensual/1258804404?i=1258805162&uo=4",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/74/c9/02/74c90240-46ce-4127-7347-15de726d377f/mzaf_4771328211351455789.plus.aac.p.m4a",
+      "artworkUrl30": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/7e/fc/5b/7efc5b10-043b-c068-4c02-8a6dabba5cd4/source/30x30bb.jpg",
+      "artworkUrl60": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/7e/fc/5b/7efc5b10-043b-c068-4c02-8a6dabba5cd4/source/60x60bb.jpg",
+      "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/7e/fc/5b/7efc5b10-043b-c068-4c02-8a6dabba5cd4/source/100x100bb.jpg",
+      "collectionPrice": 12.99,
+      "trackPrice": 1.29,
+      "releaseDate": "2017-07-21T07:00:00Z",
+      "collectionExplicitness": "explicit",
+      "trackExplicitness": "notExplicit",
+      "discCount": 1,
+      "discNumber": 1,
+      "trackCount": 18,
+      "trackNumber": 10,
+      "trackTimeMillis": 204701,
+      "country": "USA",
+      "currency": "USD",
+      "primaryGenreName": "Música tropical",
+      "isStreamable": true
+    }
+  ]
+}

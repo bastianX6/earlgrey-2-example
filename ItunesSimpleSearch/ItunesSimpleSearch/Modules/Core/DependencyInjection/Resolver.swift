@@ -24,3 +24,11 @@ class Resolver {
         return component
     }
 }
+
+#if DEBUG
+    @objc
+    enum ComponentType: Int {
+        case lookupRepository
+        case searchRepository
+    }
+#endif
